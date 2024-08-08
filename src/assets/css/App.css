@@ -1,0 +1,761 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} 
+
+a {
+  cursor: pointer;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+dialog a {
+  background-color: rgb(0, 0, 0);
+}
+
+#root {
+  margin: 0 auto;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding-top: 32px;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+dialog {
+  margin: 0 auto;
+}
+
+/* header start  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #ffffff4a;
+  padding-left: 23px;
+  padding-right: 12px;
+  padding-block: 24px;
+  width: 310px;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 105px;
+}
+
+.logo {
+  padding: 0;
+}
+
+.logo li {
+  list-style: none;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.score {
+  width: 80px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  padding-block: 10px;
+  border-radius: 8px;
+}
+
+.score p {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.5625px;
+  text-align: center;
+  color: #2a45c2;
+}
+
+.score h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: #565468;
+}
+/* header end  */
+
+/* game image start  */
+.game-img {
+  background-image: url(./img/ucgen-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  width: 360px;
+  margin-bottom: 140px;
+}
+
+.game-img-box {
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  gap: 70px;
+  width: 360px;
+}
+
+
+.game-img-box img {
+  width: 130px;
+}
+
+.tas-img {
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  width: 145px;
+}
+
+.tas-img img {
+  width: 130px;
+}
+
+/* game image end  */
+
+/* rules start  */
+
+.rules {
+  width: 130px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 56px;
+}
+
+.rules a {
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px 36px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+}
+
+/* rules end  */
+
+/*? step 1 end  */
+
+/*? pre step 2 start  */
+
+/* picked start  */
+
+.picked {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.picked-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 130px;
+  gap: 17px;
+  margin-bottom: 245px;
+}
+
+.picked-box:last-child {
+  width: 110px;
+  gap: 36px;
+}
+
+.picked-box img {
+  width: 130px;
+}
+
+.picked-box p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.875px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* picked end  */
+
+/*? pre step 2 end  */
+
+/*? step 2 start  */
+
+/* picked start  */
+
+.step2-picked {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.step2-picked-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 130px;
+  gap: 17px;
+  margin-bottom: 245px;
+}
+
+.step2-picked-box img {
+  width: 130px;
+}
+
+.step2-picked-box p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.875px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* picked end  */
+
+/*?  step 2 end  */
+
+/*? step 3 win start  */
+
+/* picked start  */
+
+.step3-win-picked {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.step3-win-picked-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 310px;
+  gap: 17px;
+  margin-bottom: 60px;
+}
+
+.step3-win-picked-box img {
+  width: 130px;
+}
+
+.step3-win-picked-box p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.875px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.oval {
+  position: absolute;
+  top: 170px;
+  right: 115px;
+  width: 280px;
+}
+
+/* picked end  */
+
+/* result start  */
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+  margin-bottom: 52px;
+}
+
+.result h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.result a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  color: #3b4262;
+  background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  padding-block: 15px;
+  width: 220px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* result end  */
+
+/*?  step 3 win end  */
+
+/*? step 3 lose start  */
+
+/* picked start  */
+
+.step3-lose-picked {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.step3-lose-picked-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 310px;
+  gap: 17px;
+  margin-bottom: 60px;
+}
+
+.step3-lose-picked-box img {
+  width: 130px;
+}
+
+.step3-lose-picked-box p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.875px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.oval {
+  position: absolute;
+  top: 170px;
+  right: 115px;
+  width: 280px;
+}
+
+/* picked end  */
+
+/*? step 3 lose end  */
+
+/*? Rules kısmı start  */
+
+.rules-container {
+  background-image: url(./img/rules.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding-top: 95px;
+  padding-bottom: 65px;
+  margin: 0 auto;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.rules-container h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #3b4262;
+}
+
+/*? Rules kısmı end  */
+
+/*! mobil end  */
+
+/*! desktop start  */
+
+@media (width > 1024px) {
+  /*? step 1 start  */
+
+  .step1Container {
+    background: radial-gradient(
+      134.34% 134.34% at 50% 0%,
+      #1f3757 0%,
+      #131537 100%
+    );
+    margin: 0 auto;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    padding-top: 32px;
+  }
+
+  /* header start  */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #ffffff4a;
+    border-radius: 8px;
+    padding-left: 32px;
+    padding-right: 24px;
+    padding-block: 28px;
+    width: 700px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 105px;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .logo li {
+    list-style: none;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .score {
+    width: 150px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+    padding-block: 10px;
+    border-radius: 8px;
+  }
+
+  .score p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+
+  .score h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+    color: #565468;
+  }
+  /* header end  */
+
+  /* game image start  */
+  .game-img {
+    margin: 0 auto;
+    width: 700px;
+    margin-bottom: 4px;
+  }
+
+  .game-img-box {
+    display: flex;
+    gap: 51px;
+    width: 700px;
+    padding-inline: 112px;
+  }
+
+  .game-img-box img {
+    width: 200px;
+  }
+
+  .tas-img {
+    margin: 0 auto;
+    width: 700px;
+    padding-inline: 250px;
+  }
+
+  .tas-img img {
+    width: 200px;
+  }
+
+  /* game image end  */
+
+  /* rules start  */
+
+  .rules {
+    width: 130px;
+    text-align: center;
+    padding-bottom: 32px;
+    margin-right: 32px;
+  }
+
+  .rules a {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 10px 36px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+  }
+
+  .rules a:hover {
+    color: #3b4262;
+    background-color: #ffffff;
+  }
+
+  /* rules end  */
+
+  /*? step 1 end  */
+
+  /*? pre step 2 start  */
+
+  /* picked start  */
+
+  .picked {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    gap: 105px;
+  }
+
+  .picked-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 292px;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+
+  .picked-box:last-child {
+    width: 225px;
+    gap: 125px;
+    margin-right: 64px;
+  }
+
+  .picked-box img {
+    width: 292px;
+  }
+
+  .picked-box p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  /* picked end  */
+
+  /*? pre step 2 end  */
+
+  /*? step 2 start  */
+
+  /* picked start  */
+
+  .step2-picked {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    gap: 105px;
+  }
+
+  .step2-picked-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 292px;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+
+  .step2-picked-box img {
+    width: 292px;
+  }
+
+  .step2-picked-box p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  /* picked end  */
+
+  /*? step 2 end  */
+
+  /*? step 3win start  */
+
+  /* picked start  */
+
+  .step3-win-picked {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 105px;
+  }
+
+  .step3-win-picked-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 292px;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+
+  .step3-win-picked-box img {
+    width: 292px;
+  }
+
+  .step3-win-picked-box p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .oval {
+    top: 120px;
+    left: 0;
+    width: 830px;
+  }
+
+  /* picked end  */
+
+  /* result start  */
+
+  .result {
+    position: relative;
+    bottom: 280px;
+  }
+
+  /* result end  */
+
+  /*? step 3 win end  */
+
+  /*? step 3 lose start  */
+
+  /* picked start  */
+
+  .step3-lose-picked {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 105px;
+  }
+
+  .step3-lose-picked-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 292px;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+
+  .step3-lose-picked-box img {
+    width: 292px;
+  }
+
+  .step3-lose-picked-box p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .oval {
+    top: 120px;
+    left: 0;
+    width: 830px;
+  }
+
+  .result a:hover {
+    color: #db2e4d;
+  }
+
+  /* picked end  */
+
+  /*? step 3 lose start  */
+
+  /*? Rules kısmı start  */
+
+  .rules-container {
+    background-image: url(./img/rules.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    height: 415px;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .rules-container h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #3b4262;
+  }
+
+  /*? Rules kısmı end  */
+}
+
+/*! desktop end  */
